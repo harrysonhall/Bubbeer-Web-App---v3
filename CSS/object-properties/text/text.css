@@ -1,0 +1,35 @@
+/*  Text Section */
+#text  {
+	/* Position & Structure */
+	display: grid;
+	grid-template-areas:
+					"title 		title		title"
+					"font		font 		font"
+					".			.			."
+					"size 		. 			weight"
+					".			.			."
+					"alignment 	alignment 	alignment";
+	grid-template-columns: 0.24fr 12px 1fr;
+	grid-template-rows: 33px 18px 12px 18px 20px 24px;
+}
+
+
+	/* Text Section SVGs */
+	#text svg {
+		/* Position & Structure */
+		padding: 6px 9px;
+
+		/* Font & Visual Style */
+		border: #545455 solid;
+		background-color: #343434;
+		transition: background-color 175ms;
+	}
+
+		#text svg:hover { background-color: #404040; }
+
+
+
+
+		/* Text Section SVG Paths - ':active' & ':hover' state */
+		#text svg:hover path {	fill: #C1C2C6;	}
+		#text svg:active path { fill: #1691E6;	}

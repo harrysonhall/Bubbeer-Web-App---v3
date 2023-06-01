@@ -1,0 +1,103 @@
+.color-picker-container {
+	 /* Position & Structure */
+	display: grid;
+	grid-template-areas:
+				". 		. 		. 		. 		. 		. 		. 		.	 	."
+				". 		canvas 	canvas 	canvas 	. 		hue 	. 		alpha 	."
+				". 		. 		. 		. 		. 		. 		. 		.	 	."
+				". 		model 	. 		color 	. 		alphav 	alphav	alphav	."	/* 'alphav' stands for "alpha value" */
+				". 		. 		. 		. 		. 		. 		. 		.	 	."
+				". 		colors	colors	colors	colors	colors	colors	colors	."
+				". 		. 		. 		. 		. 		. 		. 		.	 	.";
+	grid-template-columns: 
+				11px		43px	21px	92px	1fr		12px	1fr		12px	1fr;
+				
+	grid-template-rows: 
+				11px		156px	15px		20px	1fr		12px	1fr;
+
+    height: 245px;
+	left: -261px;
+	position: absolute;
+	place-items: center;
+	top: -231px;
+	width: 225px;
+
+
+	/* Fonts & Visual Style */
+	background-color: #2F2F2F;
+	border: solid red 1px;
+	border-radius: 9px;
+	z-index: 10;
+	/* opacity: 0.3; */
+}
+
+
+	.color-picker-container > canvas {
+		/* Fonts & Visual Style */
+		border: solid red 1px;
+	}
+
+
+
+
+
+
+
+
+
+
+	.color-picker-container > div {
+		 /* Position & Structure */
+		justify-self: flex-start;
+		height: 21px;
+		left: -3px;
+		position: relative;
+		width: 48px;
+
+		transition: height 250ms, width 250ms, left 250ms, border 500ms;
+
+		/* Fonts & Visual Style */
+		background-color: #2F2F2F;
+		border: solid #c1c2c600 1px;
+		border-radius: 4px;
+		letter-spacing: 0;
+		color: #C1C2C6;
+		font-weight: 65;
+		overflow: hidden;
+	}
+
+		.color-model-wrapper {
+		 	/* Position & Structure */
+			height: 62px;
+			position: absolute;
+			top: initial;
+			bottom: initial;
+			width: calc(100% - 4px);
+
+			transition: top 250ms, bottom 250ms;
+		}
+
+			.color-model-wrapper > a {
+				/* Position & Structure */
+				display: block;
+				height: 20px;
+				padding-left: 5px;
+
+				transition: padding-left 250ms, background-color 175ms, color 250ms;
+
+				/* Fonts & Visual Style */
+				background-color: #2F2F2F;
+				border-radius: 4px;
+			}
+
+			.color-model-wrapper > a:hover {
+				background-color: #404040;
+			} 	
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+@import url('./CSS/ui.css');
+
+/* Utility */
+@import url('./CSS/utility/slider.css');
+@import url('./CSS/utility/color-picker.css');
+
+/* Ui - Global */
+@import url('./CSS/ui-resizeable-panel.css');
+
+/* Ui - Individual */
+@import url('./CSS/object-properties/ui-object-properties-panel.css');
+@import url('./CSS/object-properties/transform/transform.css');
+@import url('./CSS/object-properties/text/text.css');
+@import url('./CSS/object-properties/text-appearance/text-appearance.css');
+
+
+
+
+
+
+#reference {
+	position: absolute;
+}
+
+
+
+
+/* Global */
+* {
+	/* border: solid red 1px; */
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+
+body {
+	/* Position & Structure */
+	padding: 0;
+	margin: 0;
+	height: 100dvh;
+	position: relative;
+}
+
+p {
+	/* Position & Structure */
+	margin: 0;
+	padding: 0;
+}
+
+path {
+	/* Font & Display */
+	transition: fill 175ms;
+}
+
+input {
+	/* Position & Structure */
+	height: 100%;
+	padding: 0;
+	width: 100%;
+
+	/* Font & Display */
+	background-color: rgba(255, 255, 255, 0.255);
+	border: none;
+	border-bottom: #78797B solid 1px;
+	border-radius: 0;
+	color: #C1C2C6;
+	font-size: 12px;
+	outline: none;
+	transition: border-bottom 175ms;
+}
+
+	input:hover {
+		/* Font & Display */
+		border-bottom: #C1C2C6 solid 1px;	
+	}
+
+	input:focus {
+		/* Font & Display */
+		border-bottom: #1691E6 solid 1px;	
+	}
+
+	input::placeholder {
+		/* Font & Display */
+		color: #9C9DA0;
+	}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
+

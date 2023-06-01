@@ -1,0 +1,92 @@
+@import url('./utility/fonts.css');
+
+
+	/* UI Resizable Panel Title */
+	div#ui > div > p:nth-child(1) {
+		/* Position & Structure */
+		position: absolute;
+		top: 17px;
+		width: 100%;
+
+		/* Font & Display */
+		color: #C1C2C6;
+		font-size: 9px;
+		font-family: MonaSans;
+		font-weight: 55;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/* UI Resiable Panel Control Icons */
+	div#ui > div > svg[draggable="false"] {
+		/* Position & Structure */
+		height: 19px;
+		position: absolute;
+		transition: background-color 175ms;
+		user-select: none;
+		width: 19px;
+
+		/* Font & Display */
+		border-radius: 3px;
+	}
+
+		/* ':hover' & ':active' States */
+		div#ui > div > svg[draggable="false"]:hover {	background-color: #464646;	}
+
+		div#ui > div > svg[draggable="false"]:hover {	background-color: #525252;	}
+
+		div#ui > div > svg[draggable="false"]:active > path { 	fill: #1691E6;		}
+
+
+
+
+
+
+
+
+	/* Drag Control */
+	div#ui > div > svg[draggable="false"]:nth-child(2) {
+		left: 10px;
+		top: 10px;
+	}
+		/* ':hover' & ':active' States */
+		div#ui > div > svg[draggable="false"]:nth-child(2):hover { cursor: grab; }
+		div#ui > div > svg[draggable="false"]:nth-child(2):active { cursor: grabbing; }
+
+
+
+
+
+
+
+
+	/* Open Close Control */
+	div#ui > div > svg[draggable="false"]:nth-child(3) {
+		right: 10px;
+		top: 10px;
+	}
+
+
+
+
+
+
+
+
+
+	/* Resize Control */
+	div#ui > div > svg[draggable="false"]:nth-child(4) {
+		right: 10px;
+		bottom: 10px;
+	}
+		div#ui > div > svg[draggable="false"]:nth-child(4):hover { cursor: se-resize; }

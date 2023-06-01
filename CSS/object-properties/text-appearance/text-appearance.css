@@ -1,0 +1,61 @@
+#text-appearance {
+    /* Position & Structure */
+    align-items: center;
+	display: grid;
+    grid-template-areas:
+        "title 			title 		title 			title 		title"
+        "opacity-box 	. 			opacity-value 	. 			opacity-label"
+        ". 				. 			. 				. 			opacity-slider"
+        "fill-box 		. 			fill-value 		.			fill-label"
+        ". 				. 			.				.			."
+        "border-box 	. 			border-value 	. 			border-label"
+		"border-dash 	border-dash border-dash 	border-dash border-dash";
+    grid-template-rows: 30px 20px 28px 14px 22px 14px 38px;
+    grid-template-columns: 14px 10px 30px 8px 1fr;
+}
+
+
+
+
+
+    #text-appearance > a {
+        /* Fonts & Visual Style */
+        color: #C1C2C6;
+        font-size: 12px;
+        font-weight: 65;
+        letter-spacing: 0px;
+    }
+
+
+
+
+    /* Text Appearance - Color Picker Preview Boxes */
+    #text-appearance > div:not([class]) {
+        /* Position & Structure */
+        height: 100%;
+        position: relative;
+
+         /* Fonts & Visual Style */
+        background-color: #C1C2C6;
+        border: #545455 solid 1px;
+        border-radius: 4px;
+    }
+
+
+
+
+
+    /* Text Appearance - Border Style */
+    #text-appearance > a:last-child {
+        /* Position & Structure */
+        display: flex;
+        height: 18px;
+        margin: auto 24px 0 24px;
+
+        /* Fonts & Visual Style */
+        /* border: solid 1px red; */
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    #text-appearance input:not([data-color-value])[type="number"] { margin: 0px 3px; }

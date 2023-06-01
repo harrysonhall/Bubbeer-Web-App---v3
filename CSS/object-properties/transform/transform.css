@@ -1,0 +1,46 @@
+
+/* Transform Section */
+#transform {
+	/* Position & Structure */
+	display: grid;
+	grid-template-areas: 
+					"title 	title 	title 	title 	title"
+					"w 		lock 	x 		. 		rotation"
+					".		lock		.		.		."
+					"h 		lock 	y 		. 		.";
+	grid-template-columns: 1fr 18px 1fr 16px 0.87fr;
+	grid-template-rows: 27px 18px 18px 18px;
+}
+
+
+
+
+
+
+	/* Transform Section Indivudual Property Containers */
+	#transform > a {
+
+		/* Font & Display */
+		line-height: 18px;
+	}
+
+
+
+
+
+
+		/* Transform Section Number Inputs */
+		#transform input[type="number"] {
+			/* Position & Structure */
+			float: right;
+			width: 75%;
+		}
+
+
+
+
+
+		/* Transform Section 'Locks' SVG - ':active' & ':hover' state */
+		#transform g#locks:hover path { fill: #C1C2C6; }
+		#transform g#locks:active path { fill: #1691E6; }
+

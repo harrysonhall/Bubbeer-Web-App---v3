@@ -1,0 +1,8 @@
+
+
+/* Main UI */
+div#ui {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}

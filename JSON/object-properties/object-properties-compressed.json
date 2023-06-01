@@ -1,0 +1,83 @@
+{
+	"properties": {
+
+		"transform": {
+			"width": null,
+			"height": null,
+			"lockAspectRatio": false,
+			"x": null,
+			"y": null,
+			"rotation": null
+		},
+
+		"text": {
+			"font": null,
+			"size": null,
+			"weight": null,
+			"alignment": null,
+			"appearance": {
+				"opacity": null,
+
+				"fill": {
+					"enabled": true,
+					"colorModel": null,
+					"color": null,
+					"alpha": null
+				},
+
+				"border": {
+					"enabled": true,
+					"colorModel": null,
+					"color": null,
+					"alpha": null,
+					"size": null,
+					"dash": null,
+					"gap": null
+				}
+			}
+		},
+
+		"shape": {
+			"appearance": {
+				"opacity": null,
+
+				"fill": {
+					"enabled": true,
+					"colorModel": null,
+					"color": null,
+					"alpha": null
+				},
+
+				"border": {
+					"enabled": true,
+					"colorModel": null,
+					"color": null,
+					"alpha": null,
+					"size": null,
+					"dash": null,
+					"gap": null
+				}
+			}
+		},
+
+		"line": {
+			"type": null,
+			"start": null,
+			"end": null,
+			"switchLineDirection": false,
+			"appearance": {
+				"opactity": null,
+
+				"border": {
+					"enabled": true,
+					"colorModel": null,
+					"color": null,
+					"alpha": null,
+					"size": null,
+					"dash": null,
+					"gap": null
+				}
+			}
+		}
+	}
+}
